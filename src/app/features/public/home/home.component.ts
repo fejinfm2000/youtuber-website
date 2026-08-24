@@ -24,15 +24,15 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
       <div class="container hero-content">
         <div class="hero-badge animate-fade-in">
           <span class="badge-dot"></span>
-          <span>CREATOR • DEVELOPER • TECH ENTHUSIAST</span>
+          <span>EXPLORER • FOOD VLOGGER • TRAVEL ENTHUSIAST</span>
         </div>
 
         <h1 class="hero-title animate-fade-in-up">
-          Building & Exploring the Future of <span class="gradient-text">AI & Software</span>
+          Exploring Authentic Flavors, Hidden Gems & <span class="gradient-text">Travel Trails</span>
         </h1>
 
         <p class="hero-description animate-fade-in-up" *ngIf="creator() as c">
-          Hi, I'm {{ c.name }}. Join <span class="highlight">{{ c.subscriberCount }}</span> curious builders discovering high-impact tech tutorials, curated tool recommendations, and modern engineering workflows.
+          Hi, I'm {{ c.name }}. Join <span class="highlight">{{ c.subscriberCount }}</span> foodies and explorers discovering authentic street foods, traditional culinary masterclasses, and vibrant cultural journeys across India.
         </p>
 
         <div class="hero-actions animate-fade-in-up">
@@ -42,7 +42,7 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
           </a>
           <a routerLink="/products" class="btn btn-secondary btn-lg" id="hero-gear-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
-            My Recommended Gear & Tools
+            Explorer Gear & Cookware
           </a>
         </div>
 
@@ -55,12 +55,12 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
           <div class="stat-divider"></div>
           <div class="stat-pill">
             <span class="stat-num">{{ c.videoCount }}</span>
-            <span class="stat-text">Curated Videos</span>
+            <span class="stat-text">Explorations & Vlogs</span>
           </div>
           <div class="stat-divider"></div>
           <div class="stat-pill">
             <span class="stat-num">100% Free</span>
-            <span class="stat-text">Knowledge Hub</span>
+            <span class="stat-text">Food & Travel Guides</span>
           </div>
         </div>
       </div>
@@ -145,8 +145,8 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
       <div class="container">
         <div class="section-header">
           <div>
-            <h2 class="section-title">Popular Tutorials & Reviews</h2>
-            <p class="section-subtitle">Deep dives that have helped hundreds of thousands of developers.</p>
+            <h2 class="section-title">Popular Food Trails & Explorations</h2>
+            <p class="section-subtitle">Iconic street food adventures, traditional recipes, and travel diaries loved by thousands.</p>
           </div>
           <a routerLink="/videos" class="btn btn-ghost btn-sm" id="view-all-videos-btn">
             Explore All Videos →
@@ -184,23 +184,23 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
       <div class="container">
         <div class="gear-banner glass-card">
           <div class="gear-banner-content">
-            <span class="badge badge-accent">CREATOR SETUP</span>
-            <h2 class="gear-banner-title">Tools, Hardware & Software I Use Daily</h2>
+            <span class="badge badge-accent">EXPLORER SETUP</span>
+            <h2 class="gear-banner-title">Vlogging Gear, Cookware & Travel Essentials I Use</h2>
             <p class="gear-banner-desc">
-              Every camera, microphone, monitor, SaaS tool and AI assistant I rely on to produce content and write code.
+              Every lightweight camera, wireless mic, cast iron kadai, and travel accessory I rely on in the field.
             </p>
             <div class="gear-pills">
-              <span class="chip active">🎙️ Audio Gear</span>
-              <span class="chip active">📷 Cameras & Lenses</span>
-              <span class="chip active">💻 MacBook & Hardware</span>
-              <span class="chip active">⚡ AI Dev Tools</span>
+              <span class="chip active">🎙️ Wireless Audio</span>
+              <span class="chip active">📷 Mirrorless Cameras</span>
+              <span class="chip active">🥘 Traditional Cookware</span>
+              <span class="chip active">🎒 Travel Backpacks</span>
             </div>
             <div class="gear-banner-actions">
               <a routerLink="/products" class="btn btn-primary" id="explore-gear-btn">
                 Browse All Recommendations
               </a>
               <a routerLink="/about" class="btn btn-ghost">
-                About My Workspace
+                About My Story
               </a>
             </div>
           </div>
@@ -217,18 +217,18 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
           <div class="community-header">
             <div class="icon-avatar">💬</div>
             <div>
-              <h3 class="community-title">Live Creator Community</h3>
-              <p class="community-sub">Connect with fellow developers and talk tech in real-time.</p>
+              <h3 class="community-title">Live Explorer Community</h3>
+              <p class="community-sub">Connect with fellow food lovers and travelers in real-time.</p>
             </div>
           </div>
           <div class="community-preview-feed">
             <div class="chat-preview-item">
-              <div class="user-bubble-name">Rahul <span class="badge badge-surface">Member</span></div>
-              <p>That AI SaaS architecture tutorial saved me 2 weeks of trial and error! 🚀</p>
+              <div class="user-bubble-name">Karthik <span class="badge badge-surface">Member</span></div>
+              <p>That Dindigul biriyani spice blend masterclass was incredible! 🍲</p>
             </div>
             <div class="chat-preview-item">
               <div class="user-bubble-name">Priya <span class="badge badge-surface">Member</span></div>
-              <p>Is the Sony ZV-E10 still worth it in 2026 for beginner streamers?</p>
+              <p>Loved the Madurai night market video, tried the bun parotta spot!</p>
             </div>
           </div>
           <div class="community-footer-cta">
@@ -239,9 +239,9 @@ import { Creator, CreatorSettings } from '../../../core/models/creator.model';
         <!-- Newsletter Subscription Box -->
         <div class="glass-card newsletter-box">
           <div class="newsletter-icon-wrap">📬</div>
-          <h3 class="newsletter-title">Subscribe to the Creator Digest</h3>
+          <h3 class="newsletter-title">Subscribe to the Explorer Digest</h3>
           <p class="newsletter-desc">
-            Get exclusive tutorials, discount promo codes, and early access to video breakdowns directly in your inbox. No spam, ever.
+            Get secret food trail guides, authentic regional recipes, and early video alerts delivered straight to your inbox. No spam, ever.
           </p>
           <form class="newsletter-form-row" (submit)="subscribeNewsletter($event)">
             <input 

@@ -20,7 +20,7 @@ export const environment = {
   youtubeApiUrl: 'https://www.googleapis.com/youtube/v3',
 
   // Creator defaults (overridden at runtime by SheetDB Creator tab)
-  creatorName:     'Alex Creator',
-  creatorHandle:   '@alexcreator',
-  creatorChannelId: 'YOUR_CHANNEL_ID',
+  creatorName:     'Pirai Adhi',
+  creatorHandle:   '@PiraiAdhi',
+  creatorChannelId: 'PiraiAdhi',
 };

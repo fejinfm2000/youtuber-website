@@ -18,8 +18,8 @@ export class AuthService {
   loginAsCreator(): void {
     const creatorUser: AuthUser = {
       uid: 'creator-admin-1',
-      email: 'alex@creatorhub.com',
-      displayName: 'Alex Creator (Admin)',
+      email: 'piraiadhi@explorer.com',
+      displayName: 'Pirai Adhi (Admin)',
       role: 'CREATOR',
       emailVerified: true,
     };

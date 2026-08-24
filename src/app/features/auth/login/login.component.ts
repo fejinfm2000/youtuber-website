@@ -14,8 +14,8 @@ import { AuthService } from '../../../core/auth/auth.service';
         
         <div class="auth-header">
           <a routerLink="/" class="auth-logo">
-            <span class="logo-icon">◈</span>
-            <span class="logo-text">CreatorHub</span>
+            <span class="logo-icon">🧭</span>
+            <span class="logo-text">Pirai Adhi</span>
           </a>
           <h2>Welcome Back</h2>
           <p>Sign in to manage content, claim perks, or enter creator studio.</p>
@@ -45,7 +45,7 @@ import { AuthService } from '../../../core/auth/auth.service';
               class="input" 
               [(ngModel)]="email" 
               name="email" 
-              placeholder="alex@creatorhub.com" 
+              placeholder="piraiadhi@explorer.com" 
               required 
             />
           </div>

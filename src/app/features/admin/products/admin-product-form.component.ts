@@ -148,7 +148,7 @@ import { Product, ProductCategory, ProductType } from '@models/product.model';
                 class="input" 
                 [(ngModel)]="formData.affiliateUrl" 
                 name="affiliateUrl" 
-                placeholder="https://partner.com/?ref=alexcreator" 
+                placeholder="https://partner.com/?ref=piraiadhi" 
               />
             </div>
 

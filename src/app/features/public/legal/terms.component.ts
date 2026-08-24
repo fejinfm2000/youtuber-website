@@ -24,7 +24,7 @@ import { CommonModule } from '@angular/common';
 
           <section>
             <h2>3. Intellectual Property</h2>
-            <p>All video content, tutorials, articles, graphics, and branding are the property of Alex Creator unless otherwise stated.</p>
+            <p>All video content, travel vlogs, recipes, graphics, and branding are the property of Pirai Adhi - The Explorer unless otherwise stated.</p>
           </section>
         </div>
       </div>

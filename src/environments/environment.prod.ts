@@ -12,7 +12,7 @@ export const environment = {
   },
   youtubeApiKey: 'YOUR_YOUTUBE_DATA_API_KEY',
   youtubeApiUrl: 'https://www.googleapis.com/youtube/v3',
-  creatorName:     'Alex Creator',
-  creatorHandle:   '@alexcreator',
-  creatorChannelId: 'YOUR_CHANNEL_ID',
+  creatorName:     'Pirai Adhi',
+  creatorHandle:   '@PiraiAdhi',
+  creatorChannelId: 'PiraiAdhi',
 };

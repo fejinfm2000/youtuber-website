@@ -14,10 +14,10 @@ import { SocialLink } from '@models/creator.model';
         <!-- Brand col -->
         <div class="footer-brand">
           <a routerLink="/" class="footer-logo">
-            <span class="logo-icon">◈</span>
-            <span class="logo-text">CreatorHub</span>
+            <span class="logo-icon">🧭</span>
+            <span class="logo-text">Pirai Adhi</span>
           </a>
-          <p class="footer-tagline">Helping developers and creators build the future.</p>
+          <p class="footer-tagline">Exploring authentic tastes, vibrant street foods, and travel journeys across India.</p>
           <div class="social-links">
             <a *ngFor="let link of socialLinks"
                [href]="link.url"
@@ -36,8 +36,8 @@ import { SocialLink } from '@models/creator.model';
             <h4 class="footer-nav-title">Content</h4>
             <nav>
               <a routerLink="/videos" class="footer-nav-link">Videos</a>
-              <a routerLink="/products" class="footer-nav-link">Products</a>
-              <a routerLink="/recommendations" class="footer-nav-link">Recommendations</a>
+              <a routerLink="/products" class="footer-nav-link">Gear & Essentials</a>
+              <a routerLink="/community" class="footer-nav-link">Community</a>
               <a routerLink="/about" class="footer-nav-link">About</a>
             </nav>
           </div>
@@ -45,7 +45,7 @@ import { SocialLink } from '@models/creator.model';
           <div class="footer-nav-col">
             <h4 class="footer-nav-title">Connect</h4>
             <nav>
-              <a routerLink="/contact" class="footer-nav-link">Business Enquiry</a>
+              <a routerLink="/contact" class="footer-nav-link">Collaborate / Contact</a>
               <a routerLink="/search" class="footer-nav-link">Search</a>
             </nav>
           </div>
@@ -63,7 +63,7 @@ import { SocialLink } from '@models/creator.model';
         <!-- Newsletter mini -->
         <div class="footer-newsletter">
           <h4 class="footer-nav-title">Stay Updated</h4>
-          <p class="footer-newsletter-sub">New videos, tools & recommendations in your inbox.</p>
+          <p class="footer-newsletter-sub">New food trails, secret spots & travel vlogs in your inbox.</p>
           <div class="newsletter-form">
             <input type="email" placeholder="Your email address" class="input newsletter-input" id="footer-newsletter-email">
             <button class="btn btn-primary btn-sm" id="footer-newsletter-btn">Subscribe</button>
@@ -74,9 +74,9 @@ import { SocialLink } from '@models/creator.model';
       <!-- Bottom bar -->
       <div class="footer-bottom">
         <div class="container footer-bottom-inner">
-          <p class="copyright">© {{ year }} Alex Creator. All rights reserved.</p>
+          <p class="copyright">© {{ year }} Pirai Adhi - The Explorer. All rights reserved.</p>
           <p class="footer-disclaimer">
-            Some links may be affiliate links. I only recommend products I personally use.
+            Some links may be affiliate links. I only recommend gear and cookware I personally use.
           </p>
         </div>
       </div>

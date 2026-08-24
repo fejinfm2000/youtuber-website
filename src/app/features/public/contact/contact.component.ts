@@ -16,34 +16,34 @@ import { BusinessEnquiry } from '../../../core/models/community.model';
           <!-- Left Info Column -->
           <div class="contact-info-col">
             <span class="badge badge-accent">GET IN TOUCH</span>
-            <h1 class="contact-title">Let's Build & Collaborate</h1>
+            <h1 class="contact-title">Let's Collaborate & Explore</h1>
             <p class="contact-lead">
-              Interested in video sponsorships, dedicated tool reviews, conference keynotes, or consulting? Send a message and let's discuss details.
+              Interested in video sponsorships, restaurant features, travel & tourism promotions, or culinary brand collaborations? Send a message to get in touch.
             </p>
 
             <div class="contact-points">
               
               <div class="glass-card contact-point-card">
-                <div class="point-icon">🤝</div>
+                <div class="point-icon">🍲</div>
                 <div>
-                  <h4>Sponsorships & Dedicated Videos</h4>
-                  <p>Reach 2.4M+ engaged tech professionals and software engineers.</p>
+                  <h4>Food & Restaurant Features</h4>
+                  <p>Spotlight your authentic recipes, heritage dining, or street stalls to 150K+ passionate food lovers.</p>
                 </div>
               </div>
 
               <div class="glass-card contact-point-card">
-                <div class="point-icon">🎙️</div>
+                <div class="point-icon">✈️</div>
                 <div>
-                  <h4>Speaking & Workshops</h4>
-                  <p>Keynotes on Modern AI tools, full-stack engineering, and developer ergonomics.</p>
+                  <h4>Travel & Tourism Campaigns</h4>
+                  <p>Engaging travel series exploring destinations, homestays, trails, and cultural events.</p>
                 </div>
               </div>
 
               <div class="glass-card contact-point-card">
                 <div class="point-icon">⚡</div>
                 <div>
-                  <h4>Quick Turnaround</h4>
-                  <p>All genuine business enquiries are reviewed within 24-48 business hours.</p>
+                  <h4>Fast & Direct Communication</h4>
+                  <p>All genuine collaboration enquiries are reviewed directly within 24-48 business hours.</p>
                 </div>
               </div>
 
@@ -249,8 +249,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'Business Enquiries & Sponsorships',
-      description: 'Contact Alex Creator for video sponsorships, dedicated reviews, keynotes, and collaborations.',
+      title: 'Collaborations & Brand Enquiries — Pirai Adhi',
+      description: 'Contact Pirai Adhi - The Explorer for video sponsorships, food reviews, restaurant features, and travel collaborations.',
     });
   }
 

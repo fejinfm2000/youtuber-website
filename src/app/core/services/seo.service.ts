@@ -11,13 +11,13 @@ export interface SeoConfig {
 
 @Injectable({ providedIn: 'root' })
 export class SeoService {
-  private readonly BASE_TITLE = 'CreatorHub — Alex Creator';
+  private readonly BASE_TITLE = 'Pirai Adhi — The Explorer';
 
   constructor(private title: Title, private meta: Meta) {}
 
   setPage(config: SeoConfig): void {
     const fullTitle = config.title
-      ? `${config.title} | Alex Creator`
+      ? `${config.title} | Pirai Adhi - The Explorer`
       : this.BASE_TITLE;
 
     this.title.setTitle(fullTitle);
@@ -48,7 +48,7 @@ export class SeoService {
   setDefault(): void {
     this.setPage({
       title: undefined,
-      description: 'Alex Creator — Tech, AI & Software content. Watch videos, explore recommendations, join the community.',
+      description: 'Pirai Adhi - The Explorer — Food exploration, street food trails, travel vlogs, authentic recipes, and creator recommendations.',
       type: 'website',
     });
   }

@@ -18,8 +18,8 @@ interface NavItem {
       <div class="container header-inner">
         <!-- Logo -->
         <a routerLink="/" class="logo" id="header-logo">
-          <span class="logo-icon">◈</span>
-          <span class="logo-text">CreatorHub</span>
+          <span class="logo-icon">🧭</span>
+          <span class="logo-text">Pirai Adhi</span>
         </a>
 
         <!-- Desktop Nav -->

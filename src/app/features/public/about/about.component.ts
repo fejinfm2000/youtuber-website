@@ -33,8 +33,8 @@ import { Creator, SocialLink } from '../../../core/models/creator.model';
                 <span class="stat-label">Videos Published</span>
               </div>
               <div class="stat-box glass-card">
-                <span class="stat-number">5+ Yrs</span>
-                <span class="stat-label">Creating & Coding</span>
+                <span class="stat-number">4+ Yrs</span>
+                <span class="stat-label">Exploring & Vlogging</span>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ import { Creator, SocialLink } from '../../../core/models/creator.model';
                 Subscribe on YouTube ↗
               </a>
               <a routerLink="/contact" class="btn btn-secondary">
-                Get in Touch for Business
+                Collaborate / Brand Enquiries
               </a>
             </div>
           </div>
@@ -66,34 +66,34 @@ import { Creator, SocialLink } from '../../../core/models/creator.model';
         <div class="container">
           <div class="section-header">
             <div>
-              <h2 class="section-title">What I Create & Stand For</h2>
-              <p class="section-subtitle">No fluff, practical engineering and honest tech reviews.</p>
+              <h2 class="section-title">What I Explore & Share</h2>
+              <p class="section-subtitle">Authentic tastes, local street food culture, traditional recipes, and travel diaries.</p>
             </div>
           </div>
 
           <div class="grid-3">
             
             <div class="glass-card pillar-card">
-              <div class="pillar-icon">🤖</div>
-              <h3 class="pillar-title">Applied AI & Agents</h3>
+              <div class="pillar-icon">🍲</div>
+              <h3 class="pillar-title">Street Food & Local Tastes</h3>
               <p class="pillar-desc">
-                Demystifying large language models, autonomous coding agents, RAG pipelines, and building practical AI-first software.
+                From 24-hour midnight night bazaars to hidden street stalls, hunting down authentic culinary delicacies and local food legends.
               </p>
             </div>
 
             <div class="glass-card pillar-card">
-              <div class="pillar-icon">💻</div>
-              <h3 class="pillar-title">Full-Stack Development</h3>
+              <div class="pillar-icon">🗺️</div>
+              <h3 class="pillar-title">Travel & Cultural Trails</h3>
               <p class="pillar-desc">
-                Architecting clean web apps, robust frontends, serverless architectures, and sharing battle-tested code patterns.
+                Venturing into ancient temple towns, waterfall treks, heritage villages, and capturing the vibrant pulse of local traditions.
               </p>
             </div>
 
             <div class="glass-card pillar-card">
-              <div class="pillar-icon">🎙️</div>
-              <h3 class="pillar-title">Creator Tech & Gear</h3>
+              <div class="pillar-icon">🎥</div>
+              <h3 class="pillar-title">Vlogging Gear & Outdoor Cooking</h3>
               <p class="pillar-desc">
-                In-depth studio breakdowns, camera settings, audio production workflows, and honest reviews of the tools I use daily.
+                Hands-on reviews of solo creator gear, microphones, portable cameras, and traditional wood-fire cooking masterclasses.
               </p>
             </div>
 
@@ -269,8 +269,8 @@ export class AboutComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'About the Creator & Story',
-      description: 'Learn more about Alex Creator, our mission, software stack, and creator milestones.',
+      title: 'About Pirai Adhi & The Explorer Story',
+      description: 'Learn more about Pirai Adhi - The Explorer, culinary expeditions, travel chronicles, and creator gear.',
     });
 
     this.creatorApi.getCreator().subscribe(c => this.creator.set(c));

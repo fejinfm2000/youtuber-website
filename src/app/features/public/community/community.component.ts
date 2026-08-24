@@ -406,43 +406,43 @@ export class CommunityComponent implements OnInit {
   posts = signal<CommunityPost[]>([
     {
       id: '1',
-      author: 'Alex Creator',
-      avatar: '🎬',
+      author: 'Pirai Adhi',
+      avatar: '🍲',
       role: 'CREATOR',
-      content: '🚀 Just dropped a deep-dive on building AI agents with Gemini Flash 2.0. The function calling API is seriously underrated — I show how to wire it up in under 50 lines. Go watch it and let me know what you want me to build next!',
-      likes: 87,
-      replies: 23,
+      content: '🔥 Just published our Dindigul Thalappakatti Mutton Biriyani video! We revealed the exact proportion of whole spices and how to get that perfect wood-fire dum flavor at home. Go watch it and drop your secret biriyani tips in the comments!',
+      likes: 124,
+      replies: 38,
       timestamp: '2 hours ago',
       pinned: true,
     },
     {
       id: '2',
-      author: 'Priya Sharma',
-      avatar: '👩‍💻',
+      author: 'Karthik Raja',
+      avatar: '🍛',
       role: 'MEMBER',
-      content: 'Been using the Sony ZV-E10 recommendation for 3 months now — absolute game changer for my setup. The autofocus is ridiculous. Thanks for the honest review, Alex!',
-      likes: 42,
-      replies: 7,
+      content: 'Tried the pre-seasoned cast iron kadai recommendation from your gear list — made village mutton chukka yesterday and the flavor was out of this world! Thanks for the genuine suggestion, Adhi bro!',
+      likes: 56,
+      replies: 9,
       timestamp: '5 hours ago',
     },
     {
       id: '3',
-      author: 'Dev Kumar',
-      avatar: '🧑‍🔧',
+      author: 'Aravind S',
+      avatar: '🧭',
       role: 'MEMBER',
-      content: 'Quick question for anyone who\'s done the Angular 18 signals migration — is it worth the effort for an existing NgRx codebase or should I wait for Angular 19 stable?',
-      likes: 18,
-      replies: 14,
+      content: 'Planning a solo food tour across Chettinad & Madurai next month. Which hidden messes would you recommend for authentic nattu kozhi and bun parotta?',
+      likes: 31,
+      replies: 16,
       timestamp: '1 day ago',
     },
     {
       id: '4',
-      author: 'Alex Creator',
-      avatar: '🎬',
+      author: 'Pirai Adhi',
+      avatar: '🍲',
       role: 'CREATOR',
-      content: '📊 Poll: What should my next long-form video be? Drop a number in replies: 1) Full-stack AI app from scratch 2) Best camera setup under ₹50k 3) Switching from Next.js to Angular — is it worth it?',
-      likes: 134,
-      replies: 61,
+      content: '📊 Community Poll: Where should our next multi-day street food trail be? Reply with: 1) Coastal Seafood Trail (Rameshwaram / Tuticorin) 2) Street Food Night Crawl in Bangalore 3) Kerala Malabar Biriyani & Tea Trail',
+      likes: 218,
+      replies: 94,
       timestamp: '2 days ago',
     },
   ]);
@@ -450,50 +450,50 @@ export class CommunityComponent implements OnInit {
   perks = [
     {
       icon: '💬',
-      title: 'Live Community Chat',
-      desc: 'Chat in real-time with the creator and other members during streams and Q&A sessions.',
+      title: 'Explorer Community Chat',
+      desc: 'Chat in real-time with Pirai Adhi and food lovers during live premieres, travel updates, and Q&As.',
     },
     {
       icon: '🏷️',
       title: 'Member Discounts',
-      desc: 'Unlock exclusive percentage discounts on gear and tool recommendations curated by the creator.',
+      desc: 'Unlock exclusive creator discounts on recommended vlogging gear, cast iron cookware, and travel accessories.',
     },
     {
       icon: '🚀',
-      title: 'Early Access',
-      desc: 'Get notified of new videos, tools, and courses before they go public.',
+      title: 'Early Video Access',
+      desc: 'Get first look at new street food episodes, secret food spot maps, and travel itineraries before they go public.',
     },
     {
       icon: '📬',
-      title: 'Creator Digest',
-      desc: 'Weekly curated email with the best tech, AI, and software picks from the creator\'s research.',
+      title: 'Explorer Gazette',
+      desc: 'Weekly newsletter with curated local food spots, authentic family recipes, and travel tips.',
     },
     {
-      icon: '🎓',
-      title: 'Learning Resources',
-      desc: 'Access to curated reading lists, code repos, and supplemental guides for each video.',
+      icon: '📍',
+      title: 'Secret Food Maps',
+      desc: 'Access verified GPS coordinates and timing guides for the best hidden street food stalls.',
     },
     {
       icon: '🗳️',
-      title: 'Vote on Content',
-      desc: 'Influence the creator\'s roadmap by voting on upcoming video topics and series.',
+      title: 'Vote on Next Destination',
+      desc: 'Directly influence where Pirai Adhi travels and what regional dishes we explore next.',
     },
   ];
 
   rules = [
-    'Be respectful and constructive',
-    'No spam or self-promotion without context',
-    'Stay on-topic: tech, AI, software & creator gear',
-    'Share your honest experience with products',
-    'No affiliate links from members',
+    'Be respectful, welcoming, and constructive',
+    'No spam or unauthorized business promotions',
+    'Stay on-topic: food exploration, street food, travel, recipes & vlogging gear',
+    'Share genuine, honest reviews and local recommendations',
+    'Support local vendors, street artisans, and heritage eateries',
   ];
 
   constructor(private seo: SeoService) {}
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'Community — CreatorHub',
-      description: 'Join the CreatorHub community. Get member discounts, chat live, and connect with fellow builders.',
+      title: 'Explorer Community — Pirai Adhi',
+      description: 'Join the Pirai Adhi Explorer Community. Share food discoveries, unlock member discounts, and chat with fellow food & travel lovers.',
     });
   }
 }
