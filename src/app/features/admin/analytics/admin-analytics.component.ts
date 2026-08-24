@@ -111,7 +111,8 @@ const MOCK_EVENTS: ActivityEvent[] = [
     .admin-analytics-page {
       display: flex;
       flex-direction: column;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
     }
 
     .analytics-header-row {
@@ -121,34 +122,45 @@ const MOCK_EVENTS: ActivityEvent[] = [
       flex-wrap: wrap;
       gap: var(--space-md);
 
-      h2 { font-size: 1.6rem; margin-bottom: 2px; }
-      p { color: var(--text-secondary); margin: 0; font-size: 0.88rem; }
+      h2 { font-size: 1.5rem; margin-bottom: 2px; }
+      p { color: var(--text-secondary); margin: 0; font-size: 0.85rem; }
     }
 
     .summary-pills-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       gap: var(--space-md);
     }
 
     .pill-card {
-      padding: var(--space-lg);
+      padding: 12px 16px;
       display: flex;
       flex-direction: column;
       gap: 2px;
+      min-width: 0;
 
-      .label { font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted); }
+      .label {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        color: var(--text-muted);
+        letter-spacing: 0.04em;
+        font-weight: 600;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
       .val {
-        font-size: 1.6rem;
+        font-size: 1.35rem;
         font-weight: 800;
         color: var(--text-primary);
+        line-height: 1.2;
         &.accent { color: var(--accent); }
         &.success { color: var(--success); }
       }
     }
 
     .filter-card {
-      padding: var(--space-md) var(--space-lg);
+      padding: 10px 16px;
       display: flex;
       align-items: center;
       gap: var(--space-md);
@@ -156,45 +168,48 @@ const MOCK_EVENTS: ActivityEvent[] = [
       .filter-group {
         display: flex;
         align-items: center;
-        gap: var(--space-md);
+        gap: var(--space-sm);
         flex-wrap: wrap;
 
-        label { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+        label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); }
       }
 
       .chip-row {
         display: flex;
-        gap: var(--space-sm);
+        gap: 6px;
         flex-wrap: wrap;
       }
     }
 
     .table-card {
       padding: var(--space-lg);
+      min-width: 0;
     }
 
     .table-responsive {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .admin-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
+      min-width: 580px;
 
       th {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         text-transform: uppercase;
         color: var(--text-muted);
-        letter-spacing: 0.06em;
-        padding: 12px;
+        letter-spacing: 0.05em;
+        padding: 8px 10px;
         border-bottom: 1px solid var(--border);
       }
 
       td {
-        padding: 14px 12px;
+        padding: 10px;
         border-bottom: 1px solid var(--border);
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         vertical-align: middle;
       }
 
@@ -204,7 +219,7 @@ const MOCK_EVENTS: ActivityEvent[] = [
     }
 
     .device-text {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       color: var(--text-muted);
     }
   `]

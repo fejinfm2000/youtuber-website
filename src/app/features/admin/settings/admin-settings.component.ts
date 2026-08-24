@@ -110,43 +110,46 @@ import { Creator, CreatorSettings } from '@models/creator.model';
     .admin-settings-page {
       display: flex;
       flex-direction: column;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
     }
 
     .settings-header {
-      h2 { font-size: 1.6rem; margin-bottom: 2px; }
-      p { color: var(--text-secondary); margin: 0; font-size: 0.88rem; }
+      h2 { font-size: 1.5rem; margin-bottom: 2px; }
+      p { color: var(--text-secondary); margin: 0; font-size: 0.85rem; }
     }
 
     .settings-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 1200px) {
         grid-template-columns: 1fr;
       }
     }
 
     .settings-card {
-      padding: var(--space-2xl);
+      padding: var(--space-lg);
+      min-width: 0;
     }
 
     .card-head {
       display: flex;
       align-items: center;
       gap: var(--space-sm);
-      margin-bottom: var(--space-xl);
+      margin-bottom: var(--space-lg);
       border-bottom: 1px solid var(--border);
-      padding-bottom: var(--space-md);
+      padding-bottom: var(--space-sm);
 
-      h3 { font-size: 1.2rem; }
+      h3 { font-size: 1.1rem; }
     }
 
     .settings-form {
       display: flex;
       flex-direction: column;
-      gap: var(--space-lg);
+      gap: var(--space-md);
     }
 
     .save-status {

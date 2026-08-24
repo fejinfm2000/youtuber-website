@@ -101,10 +101,11 @@ import { ThemeService } from '../../../core/services/theme.service';
       display: flex;
       min-height: 100vh;
       background: var(--bg-primary);
+      overflow-x: hidden;
     }
 
     .admin-sidebar {
-      width: 270px;
+      width: 240px;
       position: fixed;
       top: 0;
       left: 0;
@@ -117,7 +118,7 @@ import { ThemeService } from '../../../core/services/theme.service';
       border-bottom: none;
       border-left: none;
       z-index: 100;
-      padding: var(--space-lg);
+      padding: var(--space-md) var(--space-md);
       background: var(--bg-secondary);
 
       @media (max-width: 1024px) {
@@ -131,48 +132,50 @@ import { ThemeService } from '../../../core/services/theme.service';
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: var(--space-2xl);
+      margin-bottom: var(--space-lg);
+      padding: 0 4px;
 
       .admin-logo {
         display: flex;
         align-items: center;
         gap: 8px;
-        font-size: 1.15rem;
+        font-size: 1.05rem;
         font-weight: 800;
         color: var(--text-primary);
         text-decoration: none;
-        .logo-icon { color: var(--accent); font-size: 1.3rem; }
+        .logo-icon { color: var(--accent); font-size: 1.2rem; }
       }
     }
 
     .sidebar-nav {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 3px;
       flex: 1;
+      overflow-y: auto;
     }
 
     .nav-section-title {
-      font-size: 0.7rem;
+      font-size: 0.68rem;
       font-weight: 700;
       color: var(--text-muted);
       letter-spacing: 0.08em;
-      margin: var(--space-md) 0 var(--space-xs) 12px;
+      margin: var(--space-sm) 0 var(--space-xs) 8px;
     }
 
     .side-link {
       display: flex;
       align-items: center;
-      gap: 12px;
-      padding: 10px 14px;
-      border-radius: var(--radius-sm);
+      gap: 10px;
+      padding: 8px 12px;
+      border-radius: var(--radius-xs);
       color: var(--text-secondary);
       text-decoration: none;
-      font-size: 0.9rem;
+      font-size: 0.86rem;
       font-weight: 500;
       transition: all var(--transition-fast);
 
-      .icon { font-size: 1.1rem; }
+      .icon { font-size: 1rem; }
 
       &:hover {
         background: var(--surface-hover);
@@ -190,9 +193,9 @@ import { ThemeService } from '../../../core/services/theme.service';
     .sidebar-footer {
       display: flex;
       flex-direction: column;
-      gap: var(--space-sm);
+      gap: var(--space-xs);
       border-top: 1px solid var(--border);
-      padding-top: var(--space-md);
+      padding-top: var(--space-sm);
 
       .preview-btn, .logout-btn {
         width: 100%;
@@ -202,22 +205,25 @@ import { ThemeService } from '../../../core/services/theme.service';
 
     .admin-main {
       flex: 1;
-      margin-left: 270px;
+      margin-left: 240px;
+      width: calc(100% - 240px);
+      min-width: 0;
       display: flex;
       flex-direction: column;
       min-height: 100vh;
 
       @media (max-width: 1024px) {
         margin-left: 0;
+        width: 100%;
       }
     }
 
     .admin-topbar {
-      height: 70px;
+      height: 60px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 0 var(--space-xl);
+      padding: 0 var(--space-lg);
       border-radius: 0;
       border-bottom: 1px solid var(--border);
       border-top: none;
@@ -234,7 +240,7 @@ import { ThemeService } from '../../../core/services/theme.service';
     }
 
     .topbar-title {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       font-weight: 600;
       color: var(--text-secondary);
     }
@@ -242,21 +248,21 @@ import { ThemeService } from '../../../core/services/theme.service';
     .topbar-actions {
       display: flex;
       align-items: center;
-      gap: var(--space-md);
+      gap: var(--space-sm);
     }
 
     .admin-user-pill {
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 6px;
       background: var(--surface);
       border: 1px solid var(--border);
-      padding: 4px 12px 4px 4px;
+      padding: 3px 10px 3px 3px;
       border-radius: var(--radius-full);
 
       .user-avatar {
-        width: 28px;
-        height: 28px;
+        width: 24px;
+        height: 24px;
         background: var(--accent);
         color: #000;
         border-radius: 50%;
@@ -264,17 +270,22 @@ import { ThemeService } from '../../../core/services/theme.service';
         align-items: center;
         justify-content: center;
         font-weight: 800;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
       }
       .user-name {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         font-weight: 600;
       }
     }
 
     .admin-body {
-      padding: var(--space-2xl);
+      padding: var(--space-lg);
       flex: 1;
+      min-width: 0;
+
+      @media (max-width: 768px) {
+        padding: var(--space-md);
+      }
     }
   `]
 })

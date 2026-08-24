@@ -169,7 +169,8 @@ import { Product } from '@models/product.model';
     .dashboard-page {
       display: flex;
       flex-direction: column;
-      gap: var(--space-2xl);
+      gap: var(--space-xl);
+      min-width: 0;
     }
 
     .dashboard-header-row {
@@ -179,42 +180,71 @@ import { Product } from '@models/product.model';
       flex-wrap: wrap;
       gap: var(--space-md);
 
-      .dash-title { font-size: 1.8rem; font-weight: 800; }
-      .dash-sub { color: var(--text-secondary); font-size: 0.9rem; margin: 0; }
+      .dash-title { font-size: 1.5rem; font-weight: 800; }
+      .dash-sub { color: var(--text-secondary); font-size: 0.85rem; margin: 0; }
     }
 
     .quick-actions-row {
       display: flex;
       gap: var(--space-sm);
+      flex-wrap: wrap;
     }
 
     .kpi-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: var(--space-lg);
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: var(--space-md);
     }
 
     .kpi-card {
-      padding: var(--space-lg);
+      padding: 14px 16px;
       display: flex;
-      gap: var(--space-md);
-      align-items: flex-start;
+      gap: 12px;
+      align-items: center;
+      min-width: 0;
 
       .kpi-icon-wrap {
-        font-size: 1.6rem;
+        font-size: 1.25rem;
         background: var(--surface-hover);
-        padding: 10px;
-        border-radius: var(--radius-sm);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: var(--radius-xs);
+        flex-shrink: 0;
       }
 
       .kpi-details {
         display: flex;
         flex-direction: column;
+        min-width: 0;
+      }
+
+      .stat-label {
+        font-size: 0.72rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .stat-value {
+        font-size: 1.35rem;
+        font-weight: 800;
+        color: var(--text-primary);
+        line-height: 1.2;
+        margin: 2px 0;
       }
 
       .stat-trend {
-        font-size: 0.72rem;
-        margin-top: 4px;
+        font-size: 0.7rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
         &.positive { color: var(--success); }
         &.neutral { color: var(--text-muted); }
       }
@@ -223,49 +253,53 @@ import { Product } from '@models/product.model';
     .dashboard-tables-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
 
-      @media (max-width: 1200px) {
+      @media (max-width: 1300px) {
         grid-template-columns: 1fr;
       }
     }
 
     .table-card {
-      padding: var(--space-xl);
+      padding: var(--space-lg);
+      min-width: 0;
 
       .card-header-bar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: var(--space-lg);
+        margin-bottom: var(--space-md);
 
-        h3 { font-size: 1.15rem; }
-        .card-action-link { font-size: 0.85rem; color: var(--accent); }
+        h3 { font-size: 1.05rem; }
+        .card-action-link { font-size: 0.82rem; color: var(--accent); }
       }
     }
 
     .table-responsive {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .admin-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
+      min-width: 480px;
 
       th {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         text-transform: uppercase;
         color: var(--text-muted);
-        letter-spacing: 0.06em;
-        padding: 10px 12px;
+        letter-spacing: 0.05em;
+        padding: 8px 10px;
         border-bottom: 1px solid var(--border);
       }
 
       td {
-        padding: 12px;
+        padding: 10px;
         border-bottom: 1px solid var(--border);
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         vertical-align: middle;
       }
 
@@ -278,18 +312,20 @@ import { Product } from '@models/product.model';
       display: flex;
       align-items: center;
       gap: var(--space-sm);
+      min-width: 0;
 
       .thumb-mini {
-        width: 44px;
-        height: 32px;
+        width: 40px;
+        height: 28px;
         object-fit: cover;
         border-radius: var(--radius-xs);
+        flex-shrink: 0;
       }
 
       .table-item-title {
         font-weight: 600;
         color: var(--text-primary);
-        max-width: 200px;
+        max-width: 220px;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;

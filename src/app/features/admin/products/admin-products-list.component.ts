@@ -130,7 +130,8 @@ import { Product } from '@models/product.model';
     .admin-products-page {
       display: flex;
       flex-direction: column;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
     }
 
     .action-bar-row {
@@ -140,12 +141,12 @@ import { Product } from '@models/product.model';
       flex-wrap: wrap;
       gap: var(--space-md);
 
-      h2 { font-size: 1.6rem; margin-bottom: 2px; }
-      p { color: var(--text-secondary); margin: 0; font-size: 0.88rem; }
+      h2 { font-size: 1.5rem; margin-bottom: 2px; }
+      p { color: var(--text-secondary); margin: 0; font-size: 0.85rem; }
     }
 
     .table-control-card {
-      padding: var(--space-md) var(--space-lg);
+      padding: 10px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -154,41 +155,45 @@ import { Product } from '@models/product.model';
 
       .search-input-wrap {
         flex: 1;
-        max-width: 400px;
+        max-width: 360px;
+        min-width: 200px;
       }
     }
 
     .table-stats-pill {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--text-secondary);
     }
 
     .table-container-card {
       padding: var(--space-lg);
+      min-width: 0;
     }
 
     .table-responsive {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .admin-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
+      min-width: 620px;
 
       th {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         text-transform: uppercase;
         color: var(--text-muted);
-        letter-spacing: 0.06em;
-        padding: 12px;
+        letter-spacing: 0.05em;
+        padding: 8px 10px;
         border-bottom: 1px solid var(--border);
       }
 
       td {
-        padding: 14px 12px;
+        padding: 10px;
         border-bottom: 1px solid var(--border);
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         vertical-align: middle;
       }
 
@@ -200,11 +205,12 @@ import { Product } from '@models/product.model';
     .prod-cell {
       display: flex;
       align-items: center;
-      gap: var(--space-md);
+      gap: var(--space-sm);
+      min-width: 0;
 
       .prod-table-thumb {
-        width: 50px;
-        height: 50px;
+        width: 42px;
+        height: 42px;
         object-fit: cover;
         border-radius: var(--radius-xs);
         flex-shrink: 0;
@@ -214,23 +220,30 @@ import { Product } from '@models/product.model';
         display: flex;
         flex-direction: column;
         gap: 2px;
+        max-width: 240px;
       }
 
       .prod-row-name {
         color: var(--text-primary);
-        font-size: 0.95rem;
+        font-size: 0.88rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .slug-pill {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--text-muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
     .meta-stack {
       display: flex;
       flex-direction: column;
-      gap: 4px;
-      .brand-sub { font-size: 0.75rem; color: var(--text-muted); }
+      gap: 2px;
+      .brand-sub { font-size: 0.72rem; color: var(--text-muted); }
     }
 
     .price-text {
@@ -244,7 +257,7 @@ import { Product } from '@models/product.model';
 
     .table-action-btns {
       display: inline-flex;
-      gap: 6px;
+      gap: 4px;
       justify-content: flex-end;
     }
 

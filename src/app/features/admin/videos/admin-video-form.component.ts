@@ -200,15 +200,17 @@ import { Video, VideoCategory } from '@models/video.model';
     .form-layout-grid {
       display: grid;
       grid-template-columns: 1.6fr 1fr;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
 
-      @media (max-width: 1024px) {
+      @media (max-width: 1100px) {
         grid-template-columns: 1fr;
       }
     }
 
     .main-form-card, .preview-sidebar-card {
-      padding: var(--space-2xl);
+      padding: var(--space-lg);
+      min-width: 0;
     }
 
     .crud-form {

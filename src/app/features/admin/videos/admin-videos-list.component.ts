@@ -121,7 +121,8 @@ import { Video } from '@models/video.model';
     .admin-videos-page {
       display: flex;
       flex-direction: column;
-      gap: var(--space-xl);
+      gap: var(--space-lg);
+      min-width: 0;
     }
 
     .action-bar-row {
@@ -131,12 +132,12 @@ import { Video } from '@models/video.model';
       flex-wrap: wrap;
       gap: var(--space-md);
 
-      h2 { font-size: 1.6rem; margin-bottom: 2px; }
-      p { color: var(--text-secondary); margin: 0; font-size: 0.88rem; }
+      h2 { font-size: 1.5rem; margin-bottom: 2px; }
+      p { color: var(--text-secondary); margin: 0; font-size: 0.85rem; }
     }
 
     .table-control-card {
-      padding: var(--space-md) var(--space-lg);
+      padding: 10px 16px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -145,41 +146,45 @@ import { Video } from '@models/video.model';
 
       .search-input-wrap {
         flex: 1;
-        max-width: 400px;
+        max-width: 360px;
+        min-width: 200px;
       }
     }
 
     .table-stats-pill {
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       color: var(--text-secondary);
     }
 
     .table-container-card {
       padding: var(--space-lg);
+      min-width: 0;
     }
 
     .table-responsive {
       overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     .admin-table {
       width: 100%;
       border-collapse: collapse;
       text-align: left;
+      min-width: 600px;
 
       th {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         text-transform: uppercase;
         color: var(--text-muted);
-        letter-spacing: 0.06em;
-        padding: 12px;
+        letter-spacing: 0.05em;
+        padding: 8px 10px;
         border-bottom: 1px solid var(--border);
       }
 
       td {
-        padding: 14px 12px;
+        padding: 10px;
         border-bottom: 1px solid var(--border);
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         vertical-align: middle;
       }
 
@@ -189,31 +194,39 @@ import { Video } from '@models/video.model';
     }
 
     .video-table-thumb {
-      width: 68px;
+      width: 60px;
       aspect-ratio: 16 / 9;
       object-fit: cover;
       border-radius: var(--radius-xs);
+      flex-shrink: 0;
     }
 
     .video-info-cell {
       display: flex;
       flex-direction: column;
       gap: 2px;
+      max-width: 260px;
 
       .video-row-title {
         color: var(--text-primary);
-        font-size: 0.92rem;
+        font-size: 0.88rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       .slug-pill {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--text-muted);
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
     }
 
     .featured-indicator {
       color: var(--accent);
       font-weight: 700;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
     }
 
     .text-right {
@@ -222,7 +235,7 @@ import { Video } from '@models/video.model';
 
     .table-action-btns {
       display: inline-flex;
-      gap: 6px;
+      gap: 4px;
       justify-content: flex-end;
     }
 
