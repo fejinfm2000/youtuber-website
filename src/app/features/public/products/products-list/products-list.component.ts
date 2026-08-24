@@ -16,10 +16,10 @@ import { Product, ProductCategory } from '../../../../core/models/product.model'
       <!-- Header Banner -->
       <section class="page-header-section">
         <div class="container">
-          <span class="badge badge-accent">CURATED RECOMMENDATIONS</span>
-          <h1 class="page-title">Creator Recommendations & Gear</h1>
+          <span class="badge badge-accent">EXPLORER GEAR & COOKWARE</span>
+          <h1 class="page-title">Explorer Gear & Essentials</h1>
           <p class="page-subtitle">
-            Every camera, microphone, software stack, and desk setup item tested and personally vouched for.
+            Every camera, wireless microphone, traditional cast iron cookware, and travel accessory tested and personally vouched for by Pirai Adhi.
           </p>
 
           <!-- Member Discount Callout -->
@@ -411,8 +411,8 @@ export class ProductsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'Creator Gear & Product Recommendations',
-      description: 'Hand-picked tech gear, microphones, cameras, software, and development tools.',
+      title: 'Explorer Gear & Cookware Recommendations — Pirai Adhi',
+      description: 'Hand-picked vlogging gear, wireless mics, cameras, cast iron cookware, and travel accessories curated by Pirai Adhi.',
     });
 
     this.productsApi.getAll().subscribe(prods => this.products.set(prods));

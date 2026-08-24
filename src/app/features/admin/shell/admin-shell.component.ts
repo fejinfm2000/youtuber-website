@@ -16,8 +16,8 @@ import { ThemeService } from '../../../core/services/theme.service';
         
         <div class="sidebar-brand">
           <a routerLink="/" class="admin-logo">
-            <span class="logo-icon">◈</span>
-            <span class="logo-text">CreatorHub</span>
+            <span class="logo-icon">🧭</span>
+            <span class="logo-text">Pirai Adhi</span>
           </a>
           <span class="badge badge-accent">STUDIO</span>
         </div>

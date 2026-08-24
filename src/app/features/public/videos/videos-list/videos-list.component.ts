@@ -15,10 +15,10 @@ import { Video, VideoCategory } from '../../../../core/models/video.model';
       <!-- Header Banner -->
       <section class="page-header-section">
         <div class="container">
-          <span class="badge badge-accent">CONTENT VAULT</span>
-          <h1 class="page-title">Videos & Tutorials</h1>
+          <span class="badge badge-accent">EXPLORER VAULT</span>
+          <h1 class="page-title">Videos & Food Trails</h1>
           <p class="page-subtitle">
-            Explore deep dives into modern AI tools, full-stack software development, and creator studio setups.
+            Explore authentic street food discoveries, secret regional recipes, and travel vlogs across India with Pirai Adhi.
           </p>
 
           <!-- Search & Filter Controls -->
@@ -28,7 +28,7 @@ import { Video, VideoCategory } from '../../../../core/models/video.model';
               <input 
                 type="text" 
                 class="filter-search-input" 
-                placeholder="Search videos by title, tech stack, or topic..." 
+                placeholder="Search food trails, recipes, places, or vlog gear..." 
                 [(ngModel)]="searchQuery"
                 id="videos-search-input"
               />
@@ -318,8 +318,8 @@ export class VideosListComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'Videos & Tech Tutorials',
-      description: 'Watch deep dive video tutorials on AI, software architecture, and creator tech.',
+      title: 'Videos & Food Exploration Vlogs — Pirai Adhi',
+      description: 'Watch street food trails, village recipes, biriyani masterclasses, and travel vlogs with Pirai Adhi - The Explorer.',
     });
 
     this.videosApi.getAll().subscribe(vids => this.videos.set(vids));

@@ -13,13 +13,13 @@ export interface ActivityEvent {
 }
 
 const MOCK_EVENTS: ActivityEvent[] = [
-  { id: '1', timestamp: '2026-08-24 09:15', type: 'AFFILIATE_CLICK', user: 'Guest (#8821)', target: 'Sony ZV-E10 Camera', source: 'Amazon Outbound', device: 'Chrome / macOS' },
-  { id: '2', timestamp: '2026-08-24 09:12', type: 'DISCOUNT_REVEAL', user: 'Rahul (Member)', target: 'Rode NT-USB Microphone', source: 'Product Page', device: 'Safari / iPhone' },
-  { id: '3', timestamp: '2026-08-24 08:58', type: 'VIDEO_VIEW', user: 'Guest (#4102)', target: 'How I Built an AI SaaS in 30 Days', source: 'Homepage Grid', device: 'Chrome / Windows' },
-  { id: '4', timestamp: '2026-08-24 08:45', type: 'AUTH', user: 'sarah@acme.com', target: 'Self-Registration', source: 'Register Page', device: 'Firefox / Linux' },
-  { id: '5', timestamp: '2026-08-24 08:30', type: 'ENQUIRY', user: 'Mark (Brand Lead)', target: 'YouTube Video Sponsorship', source: 'Contact Form', device: 'Edge / Windows' },
-  { id: '6', timestamp: '2026-08-24 08:15', type: 'AFFILIATE_CLICK', user: 'Guest (#1920)', target: 'Cursor AI Editor', source: 'Video Details', device: 'Chrome / macOS' },
-  { id: '7', timestamp: '2026-08-24 07:50', type: 'PRODUCT_VIEW', user: 'Anu (Member)', target: 'MacBook Pro M4', source: 'Recommendations', device: 'Safari / iPad' },
+  { id: '1', timestamp: '2026-08-24 09:15', type: 'AFFILIATE_CLICK', user: 'Guest (#8821)', target: 'Sony ZV-E10 Mirrorless Camera', source: 'Amazon Outbound', device: 'Chrome / Android' },
+  { id: '2', timestamp: '2026-08-24 09:12', type: 'DISCOUNT_REVEAL', user: 'Karthik (Member)', target: 'Traditional Cast Iron Kadai', source: 'Product Page', device: 'Safari / iPhone' },
+  { id: '3', timestamp: '2026-08-24 08:58', type: 'VIDEO_VIEW', user: 'Guest (#4102)', target: 'Friday Night Unexpected Home-made Chicken Biriyani', source: 'Homepage Grid', device: 'Chrome / Windows' },
+  { id: '4', timestamp: '2026-08-24 08:45', type: 'AUTH', user: 'aravind@foodies.in', target: 'Self-Registration', source: 'Register Page', device: 'Firefox / Linux' },
+  { id: '5', timestamp: '2026-08-24 08:30', type: 'ENQUIRY', user: 'Anand (Spice Brand Lead)', target: 'Culinary Brand Collaboration', source: 'Contact Form', device: 'Edge / Windows' },
+  { id: '6', timestamp: '2026-08-24 08:15', type: 'AFFILIATE_CLICK', user: 'Guest (#1920)', target: 'DJI Mic 2 Wireless Microphone System', source: 'Video Details', device: 'Chrome / Android' },
+  { id: '7', timestamp: '2026-08-24 07:50', type: 'PRODUCT_VIEW', user: 'Meena (Member)', target: 'Insta360 X3 Action Camera', source: 'Recommendations', device: 'Safari / iPad' },
 ];
 
 @Component({

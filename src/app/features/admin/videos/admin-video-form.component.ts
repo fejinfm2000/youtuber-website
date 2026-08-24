@@ -58,7 +58,7 @@ import { Video, VideoCategory } from '@models/video.model';
                   [(ngModel)]="formData.title" 
                   (ngModelChange)="onTitleChange($event)"
                   name="title" 
-                  placeholder="How I Built an AI SaaS" 
+                  placeholder="Friday Night Unexpected Chicken Biriyani" 
                   required 
                 />
               </div>
@@ -71,7 +71,7 @@ import { Video, VideoCategory } from '@models/video.model';
                   class="input" 
                   [(ngModel)]="formData.slug" 
                   name="slug" 
-                  placeholder="how-i-built-an-ai-saas" 
+                  placeholder="friday-night-unexpected-chicken-biriyani" 
                   required 
                 />
               </div>

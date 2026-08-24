@@ -18,15 +18,15 @@ import { Product } from '../../../core/models/product.model';
         <div class="container">
           
           <div class="search-hero-card glass-card">
-            <span class="badge badge-accent">GLOBAL SEARCH</span>
-            <h1 class="search-title">Find Across the Creator Hub</h1>
+            <span class="badge badge-accent">EXPLORER SEARCH</span>
+            <h1 class="search-title">Search Videos, Food Trails & Gear</h1>
             
             <div class="search-bar-wrap">
               <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
               <input 
                 type="text" 
                 class="main-search-input" 
-                placeholder="Search videos, tutorials, cameras, mics, software..." 
+                placeholder="Search biriyani recipes, night markets, travel trails, cameras, mics..." 
                 [(ngModel)]="query" 
                 id="global-search-input"
               />
@@ -37,7 +37,7 @@ import { Product } from '../../../core/models/product.model';
           <!-- Matching Videos Section -->
           <div class="results-block" *ngIf="matchedVideos().length > 0">
             <h3 class="block-title">
-              <span>Videos & Tutorials ({{ matchedVideos().length }})</span>
+              <span>Videos & Food Trails ({{ matchedVideos().length }})</span>
               <a routerLink="/videos" class="see-all-link">View all videos →</a>
             </h3>
 
@@ -244,8 +244,8 @@ export class SearchComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.setPage({
-      title: 'Global Search',
-      description: 'Search across all videos, tutorials, products, and gear on the Creator Hub.',
+      title: 'Search Food Trails & Gear — Pirai Adhi',
+      description: 'Search across all street food videos, recipes, travel trails, and gear on Pirai Adhi - The Explorer.',
     });
 
     this.videosApi.getAll().subscribe(v => this.allVideos.set(v));

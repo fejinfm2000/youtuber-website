@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
 
           <section>
             <h2>Unbiased Recommendations</h2>
-            <p>Every product, microphone, camera, SaaS tool, and laptop featured on this site has been purchased or thoroughly tested by the creator. We never recommend a tool solely because of an affiliate relationship.</p>
+            <p>Every product, vlogging camera, wireless microphone, travel accessory, and cast iron cookware item featured on this site has been personally used and tested by Pirai Adhi. We never recommend a tool solely because of an affiliate relationship.</p>
           </section>
 
           <section>
